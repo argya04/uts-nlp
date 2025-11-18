@@ -51,9 +51,7 @@ st.write("NIM  : 2212500686, 2212500900")
 st.write("---")
 # end of title
 
-# # =================================
-# # Begin of text preprocessing code
-# # =================================
+# Begin of text preprocessing code=
 def preprocessing(text):
     # Begin of Casefolding function
     text = text.lower()
@@ -288,7 +286,7 @@ if uploaded_file:
                     # Begin of LDA Classification
                     lda_classify = LinearDiscriminantAnalysis()
                     lda_classify.fit(X_train, y_train)
-                    y_pred = lda_classify.predict(X_test.toarray())
+                    y_pred = lda_classify.predict(X_test)
                     # End of LDA Classification
 
                     # Begin of LDA Topic Modeling
